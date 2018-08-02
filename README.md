@@ -21,6 +21,7 @@ open the dbhelper.js file and change const port variable to your customized port
 
 3.Open the following link in your webbrowser: *http://localhost:8008/*
 The port needs to be changed in case you used a different one.
+
 4.The webpage is diyplayed on the localhost
 
 ## Leaflet.js and Mapbox:
@@ -33,6 +34,8 @@ This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://w
 Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. 
 
 ### Code Reference
--[Mapbox](https://www.mapbox.com/)
--[Udacity Restaurant Review App Project](https://github.com/udacity/mws-restaurant-stage-1)
--[WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1)
+1.[Mapbox](https://www.mapbox.com/)
+
+2.[Udacity Restaurant Review App Project](https://github.com/udacity/mws-restaurant-stage-1)
+
+3.[WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1)
