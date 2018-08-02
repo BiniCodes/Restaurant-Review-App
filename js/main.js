@@ -186,6 +186,7 @@ createRestaurantHTML = (restaurant) => {
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
   more.setAttribute("aria-labelledby", 'restaurant'+itemNumber); 
+  more.setAttribute("aria-role", 'button'); 
   li.append(more)
 
   itemNumber += 1;
