@@ -169,6 +169,9 @@ createRestaurantHTML = (restaurant) => {
 
   const name = document.createElement('h1');
   name.innerHTML = restaurant.name;
+  name.id = 'restaurant'+ itemNumber;
+  name.setAttribute("aria-label", 'restaurant ' + restaurant.name + ' cuisine ' + restaurant.cuisine_type);
+
   li.append(name);
 
   const neighborhood = document.createElement('p');
@@ -182,6 +185,7 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
+  more.setAttribute("aria-labelledby", 'restaurant'+itemNumber); 
   li.append(more)
 
   itemNumber += 1;
