@@ -445,6 +445,7 @@ color: #804200;
       margin: 15px;
       padding: 0 10px;
       min-width: 250px;
+      cursor:pointer;
     }
 
     /* ====================== Restaurant Listing ====================== */
