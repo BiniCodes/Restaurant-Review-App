@@ -258,6 +258,14 @@ nav h1 a {
   text-transform: uppercase;
 }
 
+#restaurants-list li a:focus {
+  outline: 5px solid #a56900 ;
+  color: #a56900;
+  font-weight: bold;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
 /* ====================== Restaurant Details ====================== */
 .inside header {
   top: 0;
