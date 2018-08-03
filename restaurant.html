@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8"> 
+  <meta charset="utf-8"> 
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Normalize.css for b
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
 
   <title>Restaurant Info</title>
 </head>
@@ -25,9 +25,11 @@
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
+    <nav id="breadcrumb" aria-label="Breadcrumb" >
+      <ol id="breadcrumblist">
       <li><a href="/">Home</a></li>
-    </ul>
+      </ol>
+    </nav>
     <!-- End breadcrumb -->
     <!-- End nav -->
   </header>
@@ -38,7 +40,7 @@
     <!-- Beginning map -->
     <div id="designContainer">
       <section id="map-container" class="item1">
-        <div id="map"></div>   
+        <div id="map" aria-role="application"></div>   
       </section>
       <!-- End map -->
       <!-- Beginning restaurant -->
