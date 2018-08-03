@@ -105,8 +105,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 80%;
 }
 #RestaurantReviews{
   color: #a8a8ff;
@@ -130,7 +129,7 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 10px 40px 16px;
+    padding: 2% 69% 2% 0;
     list-style: none;
     background-color: #eee;
     font-size: 17px;
@@ -170,7 +169,7 @@ nav h1 a {
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
-  width: 100%;
+  width: 95%;
   height: 50%;
   padding: 2.5%;
   background-color: #3397DB;
@@ -209,17 +208,17 @@ nav h1 a {
   margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
-  width: 100%;
+  width: 90%;
 }
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: 20px ;
+  margin: 10px ;
   min-height: 190px;
   padding: 0 30px 25px;
   text-align: left;
-  width: 270px;
+  width: 220px;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -287,7 +286,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 100%;
+  min-width: 80%;
 }
 #restaurant-name {
   color: #804200;
@@ -409,6 +408,9 @@ color: #804200;
       letter-spacing: 10px;
       text-transform: uppercase;
     }
+    #footer {
+      min-width: 80%;
+    }
     #breadcrumb {
         padding: 10px 50px 16px;
         font-size: 0.7em;
@@ -426,6 +428,10 @@ color: #804200;
     .breadcrumbElements{
       font-size: 1.5em;
     }
+    #breadcrumblist{
+      min-width:100%;
+    }
+
     /* ====================== Map ====================== */
     #map {
       height: 400px;
@@ -434,6 +440,7 @@ color: #804200;
     .filter-options {
       height: 5%;
       padding: 1%;
+      width: 98%;
     }
     .filter-options h2 {
       font-size: 140%;
@@ -449,11 +456,14 @@ color: #804200;
     }
 
     /* ====================== Restaurant Listing ====================== */
+    #restaurants-list {
+      padding: 30px 30px;
+    }
     #restaurants-list li {
-      margin: 10px 15px;
+      margin: 10px 20px;
       min-height: 380px;
-      padding: 0 30px 25px;
-      width: 280px;
+      padding: 0 20px 25px;
+      width: 260px;
     }
     #restaurants-list .restaurant-img {
       margin: 10px auto;
@@ -533,6 +543,9 @@ color: #804200;
     nav h1 a {
       font-size: 90%;
     }
+    #footer {
+      min-width: 80%;
+    }
     #breadcrumb {
         font-size: 1.8em;
     }
@@ -548,6 +561,7 @@ color: #804200;
     /* ====================== Restaurant Filtering ====================== */
     .filter-options {
       padding: 1%;
+      min-width:  98%;
     }
     .filter-options h2 {
       white-space: nowrap;
