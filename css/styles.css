@@ -229,7 +229,7 @@ nav h1 a {
   min-height: 124px;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color:  #b56000;
   font-family: Arial,sans-serif;
   font-size: 16pt;
@@ -459,7 +459,7 @@ color: #804200;
       margin: 10px auto;
       min-height: 40%;
     }
-    #restaurants-list li h1 {
+    #restaurants-list li h2 {
       font-size: 14pt;
       line-height: 1;
       text-transform: uppercase;
@@ -574,7 +574,7 @@ color: #804200;
       margin: 10px auto;
       min-height: 248px;
     }
-    #restaurants-list li h1 {
+    #restaurants-list li h2 {
       font-size: 16pt;
     }
     #restaurants-list li a {
