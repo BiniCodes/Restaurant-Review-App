@@ -130,7 +130,7 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 2% 50% 2% 0;
+    padding: 0.5% 50% 2% 0;
     list-style: none;
     background-color: #eee;
     font-size: 1.5em;
@@ -391,7 +391,7 @@ color: #804200;
   text-align: center;
   background: #a56900;
   color:#fff;
- /* width: 40%;*/
+  width: 40%;
 }
 
 
@@ -553,7 +553,7 @@ color: #804200;
       font-size: 90%;
     }
     #footer {
-       width: 95%;
+       width: 97%;
     }
     #breadcrumb {
         font-size: 1.8em;
@@ -650,7 +650,7 @@ color: #804200;
     border-radius: 10px;
   }
   #reviews-container {
-    width: 100%;
+    width: 80%;
   }
   #reviews-container h2 {
     font-size: 2.0em;
@@ -662,9 +662,9 @@ color: #804200;
     flex-wrap: wrap;
   }
   #reviews-list li {
-    font-size: 0.8em;
+    font-size: 1.2em;
     margin: 0 20px 30px;
-    width: 25%;
+    width: 80%;
   }
   .inside .stylReviewText{
     color:#fff;
