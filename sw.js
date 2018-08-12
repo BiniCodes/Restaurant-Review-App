@@ -35,7 +35,36 @@ self.addEventListener('fetch', function(event) {
 	console.log(event.request.url);
 		event.respondWith(
 			caches.match(event.request).then(function(response) {
-				return response || fetch(event.request);
-		})
-	);
-});
+				// Cache hit - return response
+		        if (response) {
+		          return response;
+		        }
+
+		        //Cumulative request
+		        //Resource: https://developers.google.com/web/fundamentals/primers/service-workers/
+
+		        //Clone the original request 
+		        const fetchRequestClone = event.request.clone();
+
+
+		        return fetch(fetchRequestClone).then(
+		          function(response) {
+			            // Check if we received a valid response
+			            if(!response || response.status !== 200 || response.type !== 'basic') {
+			              return response;
+			            }
+
+						//Clone the original response 
+		            	const responseToCacheClone = response.clone();
+
+			            caches.open('v1')
+			              .then(function(cache) {
+			                cache.put(event.request, responseToCacheClone);
+			              });
+
+		            	return response;
+		          }
+		        );
+		      })
+		    );
+		});
